@@ -13,7 +13,9 @@
     "release-minor": "aegir release --type minor",
     "release-major": "aegir release --type major",
     "coverage": "aegir coverage",
-    "coverage-publish": "aegir coverage -u"
+    "coverage-publish": "aegir coverage -u",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "zeronet",
@@ -34,7 +36,8 @@
   "dependencies": {
     "express": "^4.16.2",
     "zeronet-common": "~0.3.0",
-    "zeronet-zite": "0.0.7"
+    "zeronet-zite": "0.0.7",
+    "snyk": "^1.189.0"
   },
   "directories": {
     "test": "test",
@@ -46,5 +49,6 @@
   },
   "contributors": [
     "mkg20001 <mkg20001@gmail.com>"
-  ]
+  ],
+  "snyk": true
 }
